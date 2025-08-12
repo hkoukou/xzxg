@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" href="/xzxg/favicon.ico">
+  <title>新质小高</title>
+  <!--[if lt IE 11]><script>window.location.href='/html/ie.html';</script><![endif]-->
+  <style>
+    html,
+    body,
+    #app {
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .chromeframe {
+      margin: 0.2em 0;
+      background: #ccc;
+      color: #000;
+      padding: 0.2em 0;
+    }
+
+    #loader-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #4E73F2;
+      z-index: 999999;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #loader {
+      width: 80px;
+      height: 80px;
+      border: 5px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top-color: #fff;
+      animation: spin 1s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .loaded #loader-wrapper {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s, visibility 0.5s;
+    }
+
+    .no-js #loader-wrapper {
+      display: none;
+    }
+
+    #loader-wrapper .load_title {
+      font-family: 'Open Sans';
+      color: #FFF;
+      font-size: 19px;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+  <script type="module" crossorigin src="/xzxg/static/js/index-DGYueMey.js"></script>
+  <link rel="stylesheet" crossorigin href="/xzxg/static/css/index-Bs4UxEh2.css">
+</head>
+
+<body>
+  <div id="app">
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="load_title">正在加载中...</div>
+    </div>
+  </div>
+</body>
+
+</html>
